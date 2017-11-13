@@ -11,10 +11,17 @@
 	
 	<!-- Styles -->
 	<link href="assets/css/reset.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Changes body class from "preload" to "contact" -->
+    <script>
+        setTimeout(function(){
+        document.body.className="contact";
+        },500);
+    </script>
 </head>
 
-<body>
+<body class="preload">
         
     <header class="main-header clearfix">
         <div class="container">
@@ -46,7 +53,7 @@
                 <label>Message</label>
                 <textarea name="message-1" class="message input" data-required_mark="required" data-field_type="text" data-original_id="message"></textarea>
                 
-                <button type="submit" class="et_pb_contact_submit et_pb_button">Submit</button>
+                <button type="submit" class="btn-submit">Submit</button>
             
             </form> <!-- /contact-form -->
 
