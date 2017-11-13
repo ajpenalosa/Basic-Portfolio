@@ -247,6 +247,54 @@ a.stackoverflow {
 	Portfolio
 --------------------------------------------------------------------------------------------- */
 
+.portfolio-gallery {
+    width: 100%;
+}
+
+.portfolio-item {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 56px;
+}
+
+.portfolio-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.portfolio-item span {
+    position: absolute;
+    bottom: 9px;
+    z-index: 20;
+    background-color: rgba(74, 170, 165, 1);
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    font-size: 1.222em;
+    line-height: 60px;
+    color: #FFF;
+    width: 100%;
+    height: 60px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.portfolio-item:hover span {
+    line-height: 205px;
+    height: 100%;
+    bottom: 0;
+    background-color: rgba(74, 170, 165, 0.9);
+}
+
+.portfolio-item img {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    display: block;
+    margin: 0;
+}
+
 /* -----------------------------------
 	Contact
 --------------------------------------------------------------------------------------------- */
@@ -283,6 +331,21 @@ a.stackoverflow {
         margin-top: 28px;
     }
     
+    .portfolio-item {
+        display: block;
+        position: relative;
+        width: 45%;
+        margin-bottom: 56px;
+    }
+    
+    .portfolio-item:nth-child(odd) {
+        float: left;
+    }
+    
+    .portfolio-item:nth-child(even) {
+        float: right;
+    }
+    
     .profile-photo {
         width: 200px;
         float: left;
@@ -310,5 +373,21 @@ a.stackoverflow {
 @media (min-width: 1200px) {
     .main-nav ul li:last-of-type {
         padding-right: 0;
+    }
+    
+    .portfolio-item {
+        display: block;
+        position: relative;
+        width: 274px;
+        height: 205px;
+        margin-bottom: 56px;
+    }
+    
+    .portfolio-item:nth-child(odd) {
+        float: left;
+    }
+    
+    .portfolio-item:nth-child(even) {
+        float: right;
     }
 }
